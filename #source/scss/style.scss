@@ -1,2 +1,178 @@
 @import "nullstyle.scss";
 
+body{
+    font-family: 'Lato', sans-serif;
+}
+section{
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    .logo{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+    }
+    .navigation{
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+    }
+}
+main{
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    .hero{
+        text-align: center;
+        h2{
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            input{
+                &[type="email"]{
+                    border: 1px solid gray;
+                    max-width: 275px;
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+                &[type = "submit"]{
+                    font-weight: 900;
+                    font-size: 1.12em;
+
+                }
+        }
+        
+        }
+    }
+
+    .features{
+        .flex{
+            display: flex;
+            flex-direction: column;
+            row-gap: 75px;
+            &__item{
+                display: flex;
+
+            }
+            .item{
+                &__icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20vw;
+                    i{
+                        color: darkorange;
+                    }
+
+                }
+                &__text{
+                    display: flex;
+                    width: 80vw;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .demo{
+        text-align: center;
+        iframe{
+            width: 100%;
+            max-width: 560px;
+        }
+    }
+}
+
+
+.text{
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn{
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    height: 30px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-container{
+    display: flex;
+    .card{
+        width: calc(100% / 3);
+        margin-right: 15px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__header{
+            text-align: center;
+            background-color: #ddd;
+            padding: 15px 0;
+            width: 100%;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &__price{
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .btn{
+            margin: 20px 0;
+            font-size: 18px;
+        }
+    }
+}
+footer{
+    padding: 15px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ddd;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    .copyright{
+        font-size: 0.9em;
+        color: #444;
+    }
+}
