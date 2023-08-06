@@ -4,8 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel = "stylesheet" href = "css/style.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
 </head>
 <body>
-  
+  <header class="header" id="header">
+    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Original Trombones" class = "logo">
+    <nav class="navigation">
+      <ul>
+        <li><a href="#features" class = "text">Features</a></li>
+        <li><a href="#how_it_works" class = "text">How it works</a></li>
+        <li><a href="#pricing" class = "text">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="" method = "post">
+        <input type="email" placeholder="Enter your email address"/>
+        <input type="submit" id = "submit" value = "get started" class = "btn">
+      </form>
+    </section>
+    <section class="features" id="features">
+      <div class="flex">
+        <div class="flex__item item">
+          <div class="item__icon"><i class="fa fa-3x fa-fire"></i></div>
+          <div class="item__text">
+            <h2>Premium Materials</h2>
+            <p  class = "text">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div class="flex__item item">
+          <div class="item__icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="item__text">
+            <h2>Fast Shipping</h2>
+            <p class = "text">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+        <div class="flex__item item">
+          <div class="item__icon"><i class="fa fa-3x fa-battery-full"></i></div>
+          
+          <div class="item__text">
+            <h2>Quality Assurance</h2>
+            <p  class = "text">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+        </div>
+    </section>
+    <section class="demo" id="how_it_works">
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section class="pricing" id="pricing">
+      <div class="card-container">
+        <div class="card">
+          <header class="card__header">TENOR TROMBONE</header>
+          <h2 class="card__price">$600</h2>
+          <ul class="card__text">
+            <li class="text">Lorem ipsum.</li>
+            <li class="text">Lorem ipsum.</li>
+            <li class="text">Lorem ipsum dolor.</li>
+            <li class = "text">Lorem ipsum.</li>
+          </ul>
+          <button class="card__btn btn--select btn">select</button>
+        </div>
+        <div class="card">
+          <header class="card__header">BASS TROMBONE</header>
+          <h2 class="card__price">$900</h2>
+          <ul class="card__text">
+            <li class="text">Lorem ipsum.</li>
+            <li class="text">Lorem ipsum.</li>
+            <li class="text">Lorem ipsum dolor.</li>
+            <li class = "text">Lorem ipsum.</li>
+          </ul>
+          <button class="card__btn btn--select btn">select</button>
+        </div>
+        <div class="card">
+          <header class="card__header">VALVE TROMBONE</header>
+          <h2 class="card__price">$1200</h2>
+          <ul class="card__list">
+            <li class="text">Plays similar to a Trumpet</li>
+            <li class="text">Great for Jazz Bands</li>
+            <li class="text">Lorem ipsum dolor.</li>
+            <li class="text">Lorem ipsum.</li>
+          </ul>
+          <button class="card__btn btn--select btn" >select</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <ul>
+          <li><a href=""  class = "text">Privacy</a></li>
+          <li><a href=""  class = "text">Terms</a></li>
+          <li><a href=""  class = "text">Contact</a></li>
+        </ul>
+        <span class="copyright">Copyright 2016, Original Trombones</span>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
