@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #eee;
 }
 section{
     margin-bottom: 50px;
@@ -13,11 +14,13 @@ h2{
 }
 
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
     padding: 30px 40px;
     .logo{
         width: 100%;
@@ -33,11 +36,11 @@ h2{
     }
 }
 main{
-    display: block;
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     .hero{
+        margin-top: 150px;
         text-align: center;
         h2{
             margin-bottom: 20px;
@@ -102,6 +105,9 @@ main{
             max-width: 560px;
         }
     }
+    .pricing{
+        margin: 0 10px 10px;
+    }
 }
 
 
@@ -127,14 +133,19 @@ main{
 
 .card-container{
     display: flex;
+    justify-content: center;
+    gap: 20px;
     .card{
         width: calc(100% / 3);
-        margin-right: 15px;
+
         border: 1px solid gray;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        &:last-child{
+            margin-right: 0;
+        }
         &__header{
             text-align: center;
             background-color: #ddd;
@@ -149,7 +160,10 @@ main{
             margin-bottom: 20px;
         }
         ul{
+           
+            
             li{
+                
                 text-align: center;
                 margin-bottom: 20px;
             }
@@ -174,5 +188,56 @@ footer{
     .copyright{
         font-size: 0.9em;
         color: #444;
+    }
+}
+
+@media(max-width: 767px){
+
+    .header{
+        padding: 20px 20px 5px 0;
+        flex-direction: column;
+        .logo{
+            margin-bottom: 5px;
+            max-width: 500px;
+            
+        }
+        .navigation{
+              margin-left: 30px;
+        }
+    }
+    .card-container{
+        flex-wrap: wrap;
+        
+    }
+    main{
+        max-width: 600px;
+    }
+    .text{
+        color: #000;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+@media(max-width: 585px){
+    main{
+        max-width: 470px;
+    }
+    .card-container{
+        flex-direction: column;
+        .card{
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 476px){
+    main{
+        max-width: 400px;
+    }
+    
+}
+@media (max-width: 400px) {
+    main{
+        max-width: 320px;
     }
 }
